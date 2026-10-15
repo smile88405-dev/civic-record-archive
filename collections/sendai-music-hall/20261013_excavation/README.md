@@ -11,7 +11,9 @@ Excavation at the planned site of the Sendai Music Hall complex (2026-10-13)
 
 ## 高解像度データ（原本）
 **Internet Archive: https://archive.org/details/civicarchive-sendai-music-hall-20261013-excavation**
-16bit非圧縮TIFF（6024×4024）、RAW（ARW）、iPhone原本、動画、SHA-256台帳を収録。ここにあるのは閲覧用の縮小版（長辺2048px）です。
+16bit非圧縮TIFF（6024×4024）、RAW（ARW）、iPhone原本、動画、SHA-256台帳を収録。予備（Google Drive）: https://drive.google.com/drive/folders/1RTxsAQsRHVimEnKvqN0dQdSpZwQ1VXj7
+
+ここにあるのは閲覧用の縮小版（長辺2048px）です。
 
 ## 現地掲示の調査・工事
 - 桜ヶ岡公園遺跡 第7次発掘調査（令和8年5月11日〜令和9年2月10日、発注:仙台市教育委員会文化財課、受注:株式会社シン技術コンサル東北支店）

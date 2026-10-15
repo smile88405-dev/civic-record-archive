@@ -4,6 +4,7 @@
 
 - **原本（高解像度）**: Internet Archive に記録ごとに1アイテムで保存（識別子 `civicarchive-<collection>-<YYYYMMDD>-<slug>`）
 - **目録（このリポジトリ）**: メタデータ・説明・縮小プレビュー
+- **予備**: Google Drive（原本一式のミラー） https://drive.google.com/drive/folders/1RTxsAQsRHVimEnKvqN0dQdSpZwQ1VXj7
 - **ライセンス**: 原則 CC BY 4.0（記録ごとの `metadata.json` に提供者とクレジットを記載）
 
 ## コレクション
