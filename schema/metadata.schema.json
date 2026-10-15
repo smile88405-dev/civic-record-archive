@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "市民記録アーカイブ 記録単位メタデータ",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "collection",
+    "project_title",
+    "date",
+    "location",
+    "contributors",
+    "license"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+_[0-9]{8}_[a-z0-9-]+$",
+      "description": "<collection>_<YYYYMMDD>_<slug>"
+    },
+    "collection": {
+      "type": "string",
+      "description": "collections.json のキー"
+    },
+    "ia_identifier": {
+      "type": "string",
+      "pattern": "^civicarchive-[a-z0-9-]+$"
+    },
+    "project_title": {
+      "type": "string"
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "location": {
+      "type": "string"
+    },
+    "geo": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lon": {
+          "type": "number"
+        }
+      }
+    },
+    "subjects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "contributors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "credit"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "credit": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "license": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "CC BY 4.0",
+            "CC BY-SA 4.0",
+            "CC0 1.0"
+          ]
+        },
+        "credit": {
+          "type": "string"
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "links": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "id": "<collection>_YYYYMMDD_<slug>",
+  "collection": "<collections.jsonのキー>",
+  "ia_identifier": "civicarchive-<collection>-YYYYMMDD-<slug>",
+  "project_title": "",
+  "title_en": "",
+  "date": "YYYY-MM-DD",
+  "location": "",
+  "subjects": [],
+  "description": "",
+  "contributors": [
+    {
+      "name": "",
+      "role": "photographer",
+      "credit": "撮影: "
+    }
+  ],
+  "license": {
+    "type": "CC BY 4.0",
+    "credit": ""
+  },
+  "tags": [],
+  "links": {}
+}
