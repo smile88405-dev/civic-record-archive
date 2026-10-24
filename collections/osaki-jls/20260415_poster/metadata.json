@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "id": "osaki-jls_20260415_poster",
+  "collection": "osaki-jls",
+  "ia_identifier": "civicarchive-osaki-jls-20260415-poster",
+  "project_title": "大崎市長選・市議選のポスター掲示場",
+  "title_en": "Election poster boards, Osaki (2026-04-15)",
+  "date": "2026-04-15",
+  "location": "宮城県大崎市古川",
+  "subjects": [],
+  "description": "2026年4月の大崎市長選挙・市議会議員選挙のポスター掲示場。",
+  "contributors": [
+    {
+      "name": "畠山紳悟",
+      "role": "photographer",
+      "credit": "撮影: 畠山紳悟"
+    }
+  ],
+  "license": {
+    "type": "CC BY 4.0",
+    "credit": "撮影: 畠山紳悟"
+  },
+  "tags": [
+    "大崎市",
+    "おおさき日本語学校",
+    "学生寮",
+    "陸羽東線",
+    "西古川駅"
+  ],
+  "links": {
+    "internet_archive": "https://archive.org/details/civicarchive-osaki-jls-20260415-poster",
+    "github": "https://github.com/smile88405-dev/civic-record-archive/tree/main/collections/osaki-jls/20260415_poster",
+    "google_drive": "https://drive.google.com/drive/folders/1RTxsAQsRHVimEnKvqN0dQdSpZwQ1VXj7",
+    "note": null
+  },
+  "files_phone": [
+    {
+      "file": "スマホ_JPEG/20260415_おおさき日本語学校_ポスター掲示場_001.jpg",
+      "caption": "大崎市長選挙のポスター掲示場（4候補のポスター）"
+    },
+    {
+      "file": "スマホ_JPEG/20260415_おおさき日本語学校_ポスター掲示場_002.jpg",
+      "caption": "同・かの良太候補のポスター"
+    },
+    {
+      "file": "スマホ_JPEG/20260415_おおさき日本語学校_ポスター掲示場_003.jpg",
+      "caption": "大崎市議選のポスター掲示場。早坂ゆう候補（自民党公認）のポスター"
+    }
+  ],
+  "status": "公開済み（2026-10-24）",
+  "file_count": 3
+}
