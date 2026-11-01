@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "id": "sendai-music-hall_20261101_polis-data",
+  "collection": "sendai-music-hall",
+  "ia_identifier": "civicarchive-sendai-music-hall-20261101-polis-data",
+  "contributors": [
+    {
+      "name": "畠山紳悟",
+      "role": "organizer",
+      "credit": "運営: 音楽堂ホールを考える会・畠山紳悟"
+    }
+  ],
+  "links": {
+    "internet_archive": "https://archive.org/details/civicarchive-sendai-music-hall-20261101-polis-data",
+    "github": "https://github.com/smile88405-dev/civic-record-archive/tree/main/collections/sendai-music-hall/20261101_polis-data",
+    "google_drive": null,
+    "note": "https://note.com/hatakeyama405/n/n70fba4220b60",
+    "facebook": null
+  },
+  "project_title": "仙台 音楽ホール等複合施設 Polis試験運用 生データ（2026-10）",
+  "title_en": "Raw data of a Polis pilot on the Sendai Music Hall complex (Oct 2026)",
+  "date": "2026-11-01",
+  "location": "オンライン（Polis 会話ID 6sphpcbrdc）",
+  "description": "仙台市の音楽ホール等複合施設について、意見の分かれ目を可視化するツールPolisで行った試験運用の全データ。投票記録・全意見・グループ別集計・日別推移。参加者は匿名でPolisの連番のみ。集計方法と限界はnote資料編2に記載。",
+  "files": [
+    "README.txt",
+    "SHA256.sha256",
+    "comment-groups.csv",
+    "comments.csv",
+    "daily_progress.csv",
+    "participant-votes.csv",
+    "statements_all_72.csv",
+    "summary.csv",
+    "votes.csv"
+  ],
+  "integrity": "SHA256.sha256 に全ファイルのSHA-256",
+  "license": {
+    "type": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "credit": "音楽堂ホールを考える会・畠山紳悟 (CC BY 4.0)",
+    "note": "出典を明記すれば、商用・非商用を問わず自由に利用できます。"
+  },
+  "tags": [
+    "仙台",
+    "音楽ホール",
+    "Polis",
+    "合意形成",
+    "市民参加",
+    "オープンデータ",
+    "市民アーカイブ"
+  ],
+  "version": "1.0.0"
+}
