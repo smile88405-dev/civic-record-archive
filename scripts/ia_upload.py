@@ -29,9 +29,11 @@ budget=float(next((a.split('=')[1] for a in sys.argv if a.startswith('--budget='
 item=get_item(m['ia_identifier'],archive_session=None) if False else get_item(m['ia_identifier'])
 have={f['name']:int(f.get('size',0)) for f in (item.files or [])}
 todo=[(k,v) for k,v in sorted(files.items(),key=lambda x:os.path.getsize(x[1])) if have.get(k)!=os.path.getsize(v)]
-print('remaining',len(todo))
+print('remaining',len(todo)); done=0
 for k,v in todo:
     if time.time()-t0>budget: print('budget stop'); break
     s0=time.time(); r=upload(m['ia_identifier'],files={k:v},metadata=md,access_key=ak,secret_key=sk,retries=3,retries_sleep=10,checksum=True,queue_derive=False)
+    done+=1 if r and r[0].status_code==200 else 0
     print('up',k,r[0].status_code if r else 'skip',round(os.path.getsize(v)/1e6/(time.time()-s0+1e-9),1),'MB/s',flush=True)
-print('left',len([1 for k,v in todo if k not in have]) )
+done=0
+print('left',len(todo)-done)
