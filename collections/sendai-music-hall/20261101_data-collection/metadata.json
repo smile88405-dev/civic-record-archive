@@ -26,7 +26,7 @@
   "description": "note連載「仙台の新音楽ホールを読む」で使った数字を、出典と区分（事実／試算／事実（会の集計））付きのCSV18本にまとめたもの。UTF-8（BOM付き）。ZIP一括版と個別CSVを収録。",
   "files": [
     "仙台新音楽ホール_データ集.zip",
-    "csv/"
+    "csv/（GitHubのみ。IAにはZIPで収録）"
   ],
   "integrity": "SHA256.sha256 に全ファイルのSHA-256",
   "license": {
@@ -43,5 +43,8 @@
     "オープンデータ",
     "市民アーカイブ"
   ],
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "ia_exclude": [
+    "csv/"
+  ]
 }

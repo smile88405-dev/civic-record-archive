@@ -15,7 +15,9 @@ open(os.path.join(ev,sh[0] if sh else 'SHA256.sha256'),'w',encoding='utf-8').wri
 files={}
 for root,_,fs in os.walk(ev):
     for f in fs:
-        p=os.path.join(root,f); files[os.path.relpath(p,ev).replace(os.sep,'/')]=p
+        p=os.path.join(root,f); k=os.path.relpath(p,ev).replace(os.sep,'/')
+        if any(k.startswith(x) for x in m.get('ia_exclude',[])): continue
+        files[k]=p
 md={'mediatype':m.get('ia_mediatype','image'),'collection':m.get('ia_collection','opensource_media'),'title':m['project_title'],
     'date':m['date'],'creator':[c['name'] for c in m['contributors']],
     'description':m['description']+'<br><br>'+m.get('title_en','')+(('<br>調査・工事: '+' / '.join(m['subjects'])) if m.get('subjects') else ''),
@@ -30,7 +32,9 @@ item=get_item(m['ia_identifier'],archive_session=None) if False else get_item(m[
 have={f['name']:int(f.get('size',0)) for f in (item.files or [])}
 todo=[(k,v) for k,v in sorted(files.items(),key=lambda x:os.path.getsize(x[1])) if have.get(k)!=os.path.getsize(v)]
 print('remaining',len(todo)); done=0
+wait=float(next((a.split('=')[1] for a in sys.argv if a.startswith('--sleep=')),'5'))
 for k,v in todo:
+    if done: time.sleep(wait)
     if time.time()-t0>budget: print('budget stop'); break
     s0=time.time(); r=upload(m['ia_identifier'],files={k:v},metadata=md,access_key=ak,secret_key=sk,retries=3,retries_sleep=10,checksum=True,queue_derive=False)
     done+=1 if r and r[0].status_code==200 else 0
