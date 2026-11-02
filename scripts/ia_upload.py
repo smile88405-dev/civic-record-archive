@@ -35,5 +35,4 @@ for k,v in todo:
     s0=time.time(); r=upload(m['ia_identifier'],files={k:v},metadata=md,access_key=ak,secret_key=sk,retries=3,retries_sleep=10,checksum=True,queue_derive=False)
     done+=1 if r and r[0].status_code==200 else 0
     print('up',k,r[0].status_code if r else 'skip',round(os.path.getsize(v)/1e6/(time.time()-s0+1e-9),1),'MB/s',flush=True)
-done=0
 print('left',len(todo)-done)
