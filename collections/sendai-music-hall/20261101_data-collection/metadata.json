@@ -13,7 +13,7 @@
     }
   ],
   "links": {
-    "internet_archive": "https://archive.org/details/civicarchive-sendai-music-hall-20261101-data-collection",
+    "internet_archive": null,
     "github": "https://github.com/smile88405-dev/civic-record-archive/tree/main/collections/sendai-music-hall/20261101_data-collection",
     "google_drive": null,
     "note": "https://note.com/hatakeyama405/n/n786c7480bd8b",
@@ -46,5 +46,6 @@
   "version": "1.0.0",
   "ia_exclude": [
     "csv/"
-  ]
+  ],
+  "ia_status": "未登録（2026-11-02 IA側でスパム判定により保留。解除を依頼中）"
 }
