@@ -16,9 +16,9 @@ files={}
 for root,_,fs in os.walk(ev):
     for f in fs:
         p=os.path.join(root,f); files[os.path.relpath(p,ev).replace(os.sep,'/')]=p
-md={'mediatype':'image','collection':'opensource_media','title':m['project_title'],
+md={'mediatype':m.get('ia_mediatype','image'),'collection':m.get('ia_collection','opensource_media'),'title':m['project_title'],
     'date':m['date'],'creator':[c['name'] for c in m['contributors']],
-    'description':m['description']+'<br><br>'+m.get('title_en','')+'<br>調査・工事: '+' / '.join(m.get('subjects',[])),
+    'description':m['description']+'<br><br>'+m.get('title_en','')+(('<br>調査・工事: '+' / '.join(m['subjects'])) if m.get('subjects') else ''),
     'subject':m.get('tags',[]),'licenseurl':'https://creativecommons.org/licenses/by/4.0/','language':'jpn',
     'coverage':m['location'],'rights':m['license'].get('credit','')}
 print(m['ia_identifier'], len(files),'files', round(sum(os.path.getsize(p) for p in files.values())/1e9,2),'GB')

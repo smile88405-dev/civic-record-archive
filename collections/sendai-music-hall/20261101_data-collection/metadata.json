@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "id": "sendai-music-hall_20261101_data-collection",
+  "collection": "sendai-music-hall",
+  "ia_identifier": "civicarchive-sendai-music-hall-20261101-data-collection",
+  "ia_mediatype": "data",
+  "ia_collection": "opensource",
+  "contributors": [
+    {
+      "name": "畠山紳悟",
+      "role": "author",
+      "credit": "音楽堂ホールを考える会（執筆：畠山紳悟）"
+    }
+  ],
+  "links": {
+    "internet_archive": "https://archive.org/details/civicarchive-sendai-music-hall-20261101-data-collection",
+    "github": "https://github.com/smile88405-dev/civic-record-archive/tree/main/collections/sendai-music-hall/20261101_data-collection",
+    "google_drive": null,
+    "note": "https://note.com/hatakeyama405/n/n786c7480bd8b",
+    "facebook": null
+  },
+  "project_title": "仙台の新音楽ホールを考えるためのデータ集（CSV18本）",
+  "title_en": "Data collection for discussing the new Sendai Music Hall (18 CSV files)",
+  "date": "2026-11-01",
+  "location": "宮城県仙台市",
+  "description": "note連載「仙台の新音楽ホールを読む」で使った数字を、出典と区分（事実／試算／事実（会の集計））付きのCSV18本にまとめたもの。UTF-8（BOM付き）。ZIP一括版と個別CSVを収録。",
+  "files": [
+    "仙台新音楽ホール_データ集.zip",
+    "csv/"
+  ],
+  "integrity": "SHA256.sha256 に全ファイルのSHA-256",
+  "license": {
+    "type": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+    "credit": "音楽堂ホールを考える会『仙台の新音楽ホールを考えるためのデータ集』 (CC BY 4.0)",
+    "note": "出典を明記すれば、商用・非商用を問わず自由に利用できます。試算は「音楽堂ホールを考える会の試算」と明記してください。"
+  },
+  "tags": [
+    "仙台",
+    "音楽ホール",
+    "仙台フィル",
+    "自治体財政",
+    "オープンデータ",
+    "市民アーカイブ"
+  ],
+  "version": "1.0.0"
+}
